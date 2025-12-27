@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year 2026 ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  animation: fadeInDown 1.5s ease-out;
+}
+
+.hero span {
+  color: #ffb3ba;
+  text-shadow: 0 0 10px rgba(255, 182, 193, 0.6);
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  opacity: 0.9;
+  animation: fadeIn 2s ease-out;
+}
+
+.hero h2 {
+  margin-top: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #ff9aa2;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* COUNTDOWN */
+.countdown {
+  margin-top: 40px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  display: flex;
+  gap: 30px;
+  animation: fadeIn 2.5s ease-out;
+}
+
+.countdown div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  min-width: 120px;
+}
+
+.countdown span {
+  display: block;
+  font-size: 3.5rem;
+  color: #ffb3ba;
+}
+
+.countdown label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* MESSAGE */
+.message {
+  margin: 100px 10%;
+  padding: 80px 60px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 40px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2.5s ease-out;
+}
+
+.message h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #ffb3ba;
+}
+
+.message p {
+  font-size: 1.25rem;
+  line-height: 2;
+  opacity: 0.95;
+}
+
+/* QUOTES */
+.quotes {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+  opacity: 0.85;
+  position: relative;
+  padding: 0 20px;
+}
+
+.quote::before {
+  content: '“';
+  font-size: 4rem;
+  opacity: 0.3;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 1rem;
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* ANIMATIONS */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* HEARTS - Enhanced with variety and gentle sway */
+.heart {
+  position: fixed;
+  bottom: -50px;
+  font-size: 28px;
+  color: #ff9aa2;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: floatUp 8s linear forwards, sway 4s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) translateX(0); opacity: 0.8; }
+  100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+@keyframes sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+}
+
+/* Fireworks particles */
+.particle {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: #ffb3ba;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sparkle 3s linear forwards;
+}
+
+@keyframes sparkle {
+  0% { opacity: 1; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0); }
+}
+
+/* NEW YEAR MESSAGE */
+.newyear {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+  color: #ffb3ba;
+  text-shadow: 0 0 20px rgba(255, 182, 193, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  animation: celebrate 4s forwards;
+}
+
+@keyframes celebrate {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+  20% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+  80% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>Happy New Year <span>2026</span></h1>
+  <p>A new chapter, a fresh beginning</p>
+  
+  <div class="countdown" id="countdown">
+    <div><span id="days">00</span><label>Days</label></div>
+    <div><span id="hours">00</span><label>Hours</label></div>
+    <div><span id="minutes">00</span><label>Minutes</label></div>
+    <div><span id="seconds">00</span><label>Seconds</label></div>
+  </div>
+  
+  <h2>Nividya Gupta 💖</h2>
+</section>
+
+<section class="message">
+  <h2>A Message Just for You</h2>
+  <p>
+    As the year changes, I hope you carry forward everything that made you smile<br>
+    and leave behind anything that made your heart heavy.
+    <br><br>
+    May this new year bring you peace, confidence, warmth,<br>
+    and moments that feel quietly beautiful.
+    <br><br>
+    Happy New Year, Nividya 🌸<br>
+    May 2026 be kind to you in every way.
+  </p>
+</section>
+
+<section class="quotes">
+  <div class="quote">Some people don’t change our lives loudly — they do it softly.</div>
+  <div class="quote">New beginnings often come disguised as simple moments.</div>
+  <div class="quote">Here’s to another year of becoming the best version of yourself.</div>
+</section>
+
+<footer>
+  Made with all my ❤️ for New Year 2026
+</footer>
+
+<script>
+// Countdown to Jan 1, 2026 00:00:00
+const newYear = new Date('January 1, 2026 00:00:00').getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = newYear - now;
+
+  if (distance <= 0) {
+    document.getElementById('countdown').innerHTML = '<div style="font-size:3rem; color:#ffb3ba;">Happy New Year 2026! 🎉</div>';
+    
+    // Trigger celebration
+    const celeb = document.createElement('div');
+    celeb.className = 'newyear';
+    celeb.textContent = 'Happy New Year!';
+    document.body.appendChild(celeb);
+    
+    // Extra sparkles on celebration
+    for (let i = 0; i < 50; i++) {
+      setTimeout(createSparkle, i * 100);
+    }
+    
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById('days').textContent = days.toString().padStart(2, '0');
+  document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+  document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+  document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown(); // Initial call
+
+// Floating hearts with variety
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  const hearts = ["❤️", "💖", "💕", "🌸", "✨"];
+  heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (6 + Math.random() * 4) + "s";
+  heart.style.fontSize = (20 + Math.random() * 15) + "px";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 400);
+
+// Occasional sparkle particles
+function createSparkle() {
+  const sparkle = document.createElement("div");
+  sparkle.className = "particle";
+  sparkle.style.left = Math.random() * 100 + "vw";
+  sparkle.style.bottom = Math.random() * 100 + "vh";
+  sparkle.style.background = ["#ffb3ba", "#ff9aa2", "#ffffff", "#ffd700"][Math.floor(Math.random() * 4)];
+  sparkle.style.animationDuration = (2 + Math.random() * 2) + "s";
+  document.body.appendChild(sparkle);
+
+  setTimeout(() => sparkle.remove(), 3000);
+}
+
+setInterval(createSparkle, 800);
+</script>
+
+</body>
+</html>
